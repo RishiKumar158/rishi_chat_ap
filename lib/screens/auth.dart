@@ -145,6 +145,7 @@ class _AuthScreenState extends State<AuthScreen> {
                         TextFormField(
                           decoration:
                               const InputDecoration(labelText: 'Password'),
+                          obscureText: true,
                           validator: (value) {
                             if (value == null || value.trim().length < 6) {
                               return 'Password must be atleast 6 characters long.';
